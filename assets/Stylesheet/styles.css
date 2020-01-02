@@ -1,0 +1,417 @@
+
+*{
+    box-sizing:border-box;
+}
+body{
+    margin:0px;
+    background-color:black;
+    overflow-x:hidden;
+}
+/* header */
+
+
+#searchbar{
+    position:fixed;
+    width:100%; 
+    z-index:50;
+    top:0px;
+    
+    
+}
+
+#search{
+    width:75%;
+    margin-left:5px;
+    margin-top:20px;
+    height:42px;
+    margin-bottom:20px;
+    
+    
+    
+}
+#searchbar input{
+    border-radius: 50px;
+    position:relative;
+    
+    
+}
+
+input:focus{
+     outline:none; 
+}
+#searchicon{
+    position:absolute;
+    left:990px;
+    top:29px;
+    
+}
+
+input[type="search"]{
+    padding-left:30px;
+}
+#button button{
+    position:absolute;
+    right:30px;
+    top:25px;
+    padding:4px;
+    border-radius:7px;
+    border:2px solid black;
+}
+
+@media(max-width:460px){
+    #button button{
+        display:none;
+
+    }
+
+}
+/* weekly section */
+#weekly{
+    height:1300px;
+    width:300px;
+    background-color:white;
+    margin-top:120px;
+    border-radius:10px;
+    border:3px solid yellowgreen;
+    overflow-x:hidden;
+    margin-left:20px;
+}
+#weekly h3{
+    margin-top:5px;
+    animation:anim_1 5s infinite;
+    overflow:hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+#weekly hr{
+    background-color:black;
+}
+@keyframes anim_1{
+    0%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translate(60%);
+    }
+    100%{
+        transform:translateX(0%);
+    }
+}
+#weekly h3:hover{
+    color:red;
+    cursor:pointer;
+}
+#songslist li{
+    padding-bottom:20px;
+     font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    color:black;
+    list-style: none;
+    position: relative;
+    
+    
+    
+    
+    
+}
+#songslist li:hover{
+    color:red;
+    cursor: pointer;
+    
+
+}
+#songslist li img{
+    max-height:80px;
+    max-width:70px;
+    margin-right:10px;
+    border:2px solid black;
+    border-radius:10px;
+    
+}
+#songslist li i{
+    position:absolute;
+    right:8px;
+    top:5px;
+}
+#songslist li i{
+    color:black;  
+}
+/* middle walpapers */
+.mainsongs{
+     display:flex;
+}
+#middleimg{
+    margin-top:120px;
+    margin-left:20px;
+}
+#middleimg  img{
+    margin-right:10px;
+    border:2px solid white;
+    margin-bottom:10px;
+    
+}
+#middleimg img:hover{
+    animation:anim_2 3s linear;
+}
+@keyframes anim_2{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+/* sidebar playlist */
+
+
+/* mainplayer */
+/* #mainplayer{
+    position:fixed;
+    bottom:0px;
+    z-index:100;
+    background-color:purple;
+    height:100px;
+    width:100%;
+
+} */
+#myplaylist button{
+    margin-top:120px;
+}
+#my{
+    height:1700px;
+    width:350px;
+    background-color:white;
+    margin-top:20px;
+    border:2px solid yellowgreen;
+    border-radius:20px;
+    
+
+}
+/* @media(max-width:1200px){
+    #weekly{
+        margin-left:100px;
+    }
+    body{
+        overflow-x:hidden;
+    }
+    #searchicon{
+        display:none;
+    }
+    
+}
+@media(max-width:992px){
+    #myplaylist{
+        margin-left:20px;
+    }
+}
+@media(max-width:768px){
+    
+} */
+@media(max-width:1200px){
+    body{
+        overflow-x:hidden;
+    }
+
+    #searchbar{
+        width:50%;
+        left:10%;
+    }
+    #weekly{
+        left:10%;
+        width:40%;
+        background-color:lightslategray;
+        border:2px solid white;
+    }
+    #middleimg{
+        left:10%;
+    }
+    #searchicon{
+        display:none;
+    }
+    #button button{
+        right:30%;
+    }
+    #myplaylist{
+        left:10%;
+        
+    
+    }
+    #my{
+        width:80%;
+    }
+    input[type=range]::-webkit-slider-runnable-track{
+        width:70%;
+    }
+    .player{
+        width:75%;
+    }
+    
+    
+}
+@media(max-width:992px){
+    body{
+        overflow-x:hidden;
+    }
+    #weekly{
+        left:15%;
+        
+        
+        
+    }
+
+}
+@media(max-width:768px){
+    body{
+        overflow-x:hidden;
+    }
+    #weekly{
+        left:10%;
+        width:75%;
+    
+    }
+    #slider{
+        width:75%;
+    }
+
+    
+
+}
+@media(max-width:576px){
+    body{
+        overflow-x:hidden;
+    }
+    
+}
+@media(min-width:1200px){
+    #myplaylist{
+        right:0%;
+    }
+    #button button{
+        /* right:15%; */
+    }
+
+    
+    
+}
+@media(min-width:320px){
+    #search{
+        width:75%;
+    }
+}
+/* my player */
+.player{
+    width:100%;
+    background-color:lightgray;
+    position:absolute;
+    z-index:100;
+    top:93%;
+    height:70px;
+    opacity:0.6;
+    position:fixed;
+    left:10px;
+    border:1px solid black;
+    
+    
+}
+#play{
+    color:red;
+    height:30px;
+    top:5px;
+    position: absolute;
+    left:0px;
+    border:1px solid black;
+    cursor:pointer;
+
+}
+#pause{
+    color:red;
+    position:absolute;
+    left:30px;
+    top:5px;
+    border:1px solid black;
+    height:30px;
+    cursor:pointer;
+}
+input[type=range] {
+    -webkit-appearance: none;
+    margin: 18px 0;
+    width: 90%;
+    position:absolute;
+    left:70px;
+
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background:red;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -10px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: red;
+  }
+  #audio{
+      display:none;
+  }
+  #my li{
+      padding-top:10px;
+     font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    color:black;
+    list-style: none;
+    position: relative;
+    
+    
+    
+    
+    
+    
+}
+#my li:hover{
+    color:#367ebd;
+    cursor: pointer;
+    
+    
+
+}
+#my li img{
+    max-height:80px;
+    max-width:70px;
+    margin-right:10px;
+    border:2px solid black;
+    border-radius:10px;
+    margin-bottom:8px;
+
+    
+}
+#my li i{
+    position:absolute;
+    right:45px;
+    top:20px;
+}
+#my li i{
+    color:black;  
+    
+}
+.player img{
+    height:50px;
+    width:90px;
+}
+
+
+
+

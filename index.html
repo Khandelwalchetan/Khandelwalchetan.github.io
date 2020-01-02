@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Music</title>
+    <link rel="icon" href="assets/images/icon.jpg">
+    <link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+    <link rel="stylesheet" href="assets/Stylesheet/styles.css">
+    <script src="assets/Javascript/songs.js"></script>
+    <script src="assets/Javascript/script.js"></script>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="header">
+            <div id="searchbar">
+                <input type="search" id="search"  autofocus spellcheck="false" placeholder="Search for songs...">
+                <span id="searchicon"><i class="fas fa-search"></i></span>
+            </div> 
+            <div id="button">
+                <button class="btn-secondary">Shuffle</button>
+            </div>
+        </div>
+        <div class="mainsongs row" >
+            <div id="weekly" class="col-xl-3 col-lg-10 col-md-12 col-sm-8 col-12">
+                <h3>Top 15</h3>
+                <hr>
+                <ul id="songslist" >
+                    
+                    
+                </ul>
+             
+
+            </div>
+            <div id="middleimg" class="col-xl-5 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                
+                    <img src="assets/images/Best1.jpg">
+                    <img src="assets/images/best2.jpg">
+                    <img src="assets/images/best3.jpg">
+                    <img src="assets/images/best4.jpg">
+                    <img src="assets/images/Best5.jpg"> 
+                    <img src="assets/images/best6.jpg">
+                    <img src="assets/images/best7.jpg">
+                    <img src="assets/images/best8.jpg">
+                    <img src="assets/images/Best9.jpg"> 
+                    <img src="assets/images/best10.jpg">
+                    <img src="assets/images/best11.jpg">
+                    <img src="assets/images/best12.jpg">
+                    <img src="assets/images/Best13.jpg"> 
+                    <img src="assets/images/best14.jpg">
+                    <img src="assets/images/best15.jpg">
+                    
+                    
+                
+
+            </div>
+            <div id="myplaylist" class="col-xl-2 col-lg-12 col-md-12 col-sm-12 col-12">
+                <button class="btn btn-success">Save Playlist</button>
+                
+                <ul id="my">
+                    
+                    
+                    
+                    
+                    
+
+                </ul>
+            </div>
+
+            
+            
+
+        </div>
+        <div id="mainplayer">
+            <audio id="audio" controls>
+                <source src="">
+
+            </audio>
+            <div class="row player">
+                <div class="col-2">
+                    <img  id="bowl" src="">
+                </div>
+                <div class="col-10">
+                    <button id="play">
+                        <i class="fas fa-play">
+
+                        </i>
+                    </button>
+                    <button id="pause">
+                        <i class="fas fa-pause">
+
+                        </i>
+                    </button>
+                    <input type="range" value=0 id="slider">
+                    <span id="songCovered"></span>
+                </div>
+            </div>
+
+        </div>
+
+        
+        
+    </div>
+    
+
+    
+</body>
+</html>
